@@ -1,3 +1,12 @@
+import { scan } from 'react-scan';
+
+if (typeof window !== 'undefined') {
+  scan({
+    enabled: true, 
+    log: true, 
+  })
+}
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
